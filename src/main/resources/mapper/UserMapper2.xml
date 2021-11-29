@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.UserMapper2">
+
+    <!--select id="get" parameterType="String" resultType="com.example.demo.bean.User">
+        SELECT * FROM user WHERE name = #{name} AND pwd = #{password}
+    </select-->
+    <update id="get" parameterType="String">
+        update user
+            set pwd=1
+    </update>
+</mapper>

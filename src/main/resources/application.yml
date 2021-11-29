@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    name: file#数据库名
+    url: jdbc:mysql://localhost:3306/file#url
+    username: root  #用户名
+    password: 123456  #密码
+    driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
